@@ -2,9 +2,9 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  background: #f8f8f8;
+  color: #c20736;
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
 body {
@@ -17,7 +17,7 @@ body {
 
 h1.title {
   font-size: 80px;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0;
   display: block;
   float: left; }
@@ -56,12 +56,12 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #fc990f;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
-  font-weight: bold;
+  font-weight: 400;
   border-radius: 3px;
   color: white;
   margin-top: 8px;
@@ -82,7 +82,7 @@ h1.title {
     color: red;
     font-size: 25px;
     line-height: 25px;
-    font-weight: bold;
+    font-weight: 400;
     color: rgba(119, 110, 101, 0.9);
     z-index: 100;
     -webkit-animation: move-up 600ms ease-in;
@@ -105,7 +105,7 @@ p {
 
 a {
   color: #776e65;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: underline;
   cursor: pointer; }
 
@@ -151,7 +151,7 @@ hr {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  background: #bbada0;
+  background: #fc990f;
   border-radius: 6px;
   width: 716px;
   height: 642px;
@@ -166,7 +166,7 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(238, 228, 218, 0.5);
+    background: rgba(248, 248, 248, 1);
     z-index: 100;
     text-align: center;
     -webkit-animation: fade-in 800ms ease 1200ms;
@@ -177,7 +177,7 @@ hr {
     animation-fill-mode: both; }
     .game-container .game-message p {
       font-size: 60px;
-      font-weight: bold;
+      font-weight: 500;
       height: 60px;
       line-height: 60px;
       margin-top: 222px; }
@@ -186,19 +186,19 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: #fff;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
-      color: #f9f6f2;
+      color: #c20736;
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
       .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message.game-won {
-      background: rgba(237, 194, 46, 0.5);
-      color: #f9f6f2; }
+      background: rgba(255, 255, 255, 0.5);
+      color: #c20736; }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
@@ -336,34 +336,37 @@ hr {
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: 55px; }
+    font-size: 55px;
+    color: #222;
+}
   .tile.tile-0 .tile-inner {
     background: #eee4da;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-1 .tile-inner {
-    background: #eaeaea;
+    background: #f9f2b2;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+    background: #f8d0a5;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+    background: #fab809;
+    color: #f9f6f2;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-    background: #f2b179; }
+    background: #f99f14; }
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
-    background: #f59563; }
+    background: #f6735f; }
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: #f67c5f; }
+    background: #ee2582; }
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
-    background: #f65e3b; }
+    background: #d00955; }
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
-    background: #edcf72;
+    background: #c20741;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -371,7 +374,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
-    background: #edcc61;
+    background: #c20736;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -379,7 +382,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
     color: #f9f6f2;
-    background: #edc850;
+    background: #c20736;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -387,7 +390,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
     color: #f9f6f2;
-    background: #edc53f;
+    background: #b5002f;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -395,7 +398,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
-    background: #edc22e;
+    background: #ffee77;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -403,7 +406,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-4096 .tile-inner {
     color: #f9f6f2;
-    background: #efa020;
+    background: #ffdd55;
     box-shadow: 0 0 30px 10px rgba(243, 195, 100, 0.62013), inset 0 0 0 1px rgba(255, 255, 255, 0.38001);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -411,7 +414,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-8192 .tile-inner {
     color: #f9f6f2;
-    background: #f27511;
+    background: #ffcc33;
     box-shadow: 0 0 30px 10px rgba(250, 128, 50, 0.68314), inset 0 0 0 1px rgba(255, 255, 255, 0.42299);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -419,7 +422,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-16384 .tile-inner {
     color: #f9f6f2;
-    background: #ff3000;
+    background: #ffbb00;
     box-shadow: 0 0 30px 10px rgba(255, 64, 0, 0.75310), inset 0 0 0 1px rgba(255, 255, 255, 0.50919);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
